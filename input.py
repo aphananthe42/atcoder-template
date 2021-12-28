@@ -18,3 +18,10 @@ A = list(map(int, input().split()))
 
 # タプルのlist
 T = [tuple((input().split())) for _ in range(N)]
+
+# 有向グラフ
+N, M = map(int, input().split())
+G = [[] for i in range(N)]
+for i in range(M):
+    A, B = map(int, input().split())
+    G[A].append(B)
