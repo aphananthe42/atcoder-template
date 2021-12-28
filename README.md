@@ -1,2 +1,0 @@
-# Cyperus
-AtCoder Template
