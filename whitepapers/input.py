@@ -1,9 +1,19 @@
+"""
+基本入力リファレンス
+"""
+
 import sys
 
 
-###基本入力リファレンス###
-# 組込input()の速い版
 def input():
+    """
+    組込input()の速い版
+
+    Returns
+    -------
+    sys.stdin.readline()[:-1] : method
+    """
+
     return sys.stdin.readline()[:-1]
 
 # 整数1つ
