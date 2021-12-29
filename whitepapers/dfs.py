@@ -20,7 +20,7 @@ for v in range(1, N):
     p = P[v-1]
     chs[p].append(v)
 
-def rec(v, chs):
+def dfs_standard(v, chs):
     """
     頂点vを根とする部分木を探索する再帰関数
 
@@ -34,9 +34,9 @@ def rec(v, chs):
 
     print(v, end=' ')
     for ch in chs[v]:
-        rec(ch, chs)
+        dfs_standard(ch, chs)
 
-def rec(v, p, depth, chs):
+def dfs_depth(v, p, depth, chs):
     """
     頂点vを根とする部分木の深さを探索
 
@@ -58,4 +58,4 @@ def rec(v, p, depth, chs):
         depth[v] = depth[p] + 1
 
     for ch in chs[v]:
-        rec(ch, v, depth, chs)
+        dfs_depth(ch, v, depth, chs)

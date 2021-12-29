@@ -11,7 +11,7 @@ def input():
 
     Returns
     -------
-    sys.stdin.readline()[:-1] : method
+    sys.stdin.readline()[:-1] : str
     """
 
     return sys.stdin.readline()[:-1]
