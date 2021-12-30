@@ -36,6 +36,7 @@ def dfs_standard(v, chs):
     for ch in chs[v]:
         dfs_standard(ch, chs)
 
+depth = [0] * N
 def dfs_depth(v, p, depth, chs):
     """
     頂点vを根とする部分木の深さを探索
@@ -59,3 +60,27 @@ def dfs_depth(v, p, depth, chs):
 
     for ch in chs[v]:
         dfs_depth(ch, v, depth, chs)
+
+size = [0] * N
+def dfs_size(v, p, size, chs):
+    """
+    頂点vを根とする部分木の頂点のサイズを探索
+
+    Parameters
+    ----------
+    v : int
+        頂点v
+    p : int
+        頂点vの親
+    size : list
+        頂点vを根とする部分木のサイズリスト
+    chs : list
+        頂点vの子頂点のリスト
+    """
+
+    for ch in chs[v]:
+        dfs_size(ch, v, size, chs)
+    
+    size[v] = 1
+    for ch in chs[v]:
+        size[v] += size[ch]
