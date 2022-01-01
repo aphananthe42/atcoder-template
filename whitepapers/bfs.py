@@ -43,10 +43,10 @@ S = [input() for _ in range(H)]
 
 # 各マス (x, y) が何手目に探索されたかを格納するlist
 dist = [[-1] * W for _ in range(H)]
+queue = deque()
 
-queue = deque((0, 0))
 # マス (X0, Y0) を始点とする
-dist[0][0] = 0
+dist[X0][Y0] = 0
 queue.append((X0, Y0))
 
 def bfs_maze():
