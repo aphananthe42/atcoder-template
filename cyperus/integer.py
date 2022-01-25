@@ -3,10 +3,17 @@
 """
 
 import sys
+from math import factorial
 
 
 def input():
     return sys.stdin.readline()[:-1]
+
+def comb(n, r):
+    """
+    nCrを求める
+    """
+    return factorial(n) // factorial(n-r) // factorial(r)
 
 def is_prime(N):
     """
