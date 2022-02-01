@@ -28,6 +28,13 @@ L = [int(input()) for _ in range(N)]
 # 整数N個 (スペース区切り)
 A = list(map(int, input().split()))
 
+# 二次元list
+H, W = map(int, input().split())
+A = [list(map(int, input().split())) for _ in range(H)]
+
+# 転置配列
+R = list(zip(*A))
+
 # タプルのlist
 T = [tuple((input().split())) for _ in range(N)]
 
