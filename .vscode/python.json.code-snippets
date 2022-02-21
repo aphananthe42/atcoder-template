@@ -1,0 +1,92 @@
+{
+	"snp_int": {
+		"scope": "python",
+	 	"prefix": "snp_int",
+	 	"body": [
+	 		"$1 = int(input())"
+	 	],
+		"description": "整数1つ"
+	},
+
+	"snp_list": {
+		"scope": "python",
+	 	"prefix": "snp_list",
+	 	"body": [
+	 		"$1 = list(map(int, input().split()))"
+	 	],
+		"description": "整数N個 (スペース区切り)"
+	},
+
+	"snp_map_int": {
+		"scope": "python",
+	 	"prefix": "snp_mapint",
+	 	"body": [
+	 		"$1, $2 = map(int, input().split())"
+	 	],
+		"description": "整数複数個"
+	},
+
+	"snp_for_int": {
+		"scope": "python",
+	 	"prefix": "snp_forint",
+	 	"body": [
+	 		"$1 = [int(input()) for _ in range($2)]"
+	 	],
+		"description": "整数N個 (改行区切り)"
+	},
+
+	"snp_two_dimensions_list": {
+		"scope": "python",
+	 	"prefix": "snp_dmslist",
+	 	"body": [
+	 		"$1, $2 = map(int, input().split())",
+			"$3 = [list(map(int, input().split())) for _ in range($4)]"
+	 	],
+		"description": "二次元list"
+	},
+
+	"snp_transpose": {
+		"scope": "python",
+	 	"prefix": "snp_transpose",
+	 	"body": [
+	 		"$1= list(zip(*$2))"
+	 	],
+		"description": "転置行列"
+	},
+
+	"snp_tuple_list": {
+		"scope": "python",
+	 	"prefix": "snp_tuplelist",
+	 	"body": [
+	 		"$1 = [tuple(map(int, input().split())) for _ in range($2)]"
+	 	],
+		"description": "タプルのlist"
+	},
+
+	"snp_directed_graph": {
+		"scope": "python",
+	 	"prefix": "snp_dgraph",
+	 	"body": [
+	 		"$1, $2 = map(int, input().split())",
+			"$3 = [[] for _ in range($4)]",
+			"for _ in range(M):",
+			"    A, B = map(int, input().split())",
+			"    $5[A].append(B)"
+	 	],
+		"description": "有向グラフ"
+	},
+
+	"snp_undirected_graph": {
+		"scope": "python",
+	 	"prefix": "snp_udgraph",
+	 	"body": [
+	 		"$1, $2 = map(int, input().split())",
+			"$3 = [[] for _ in range($4)]",
+			"for _ in range(M):",
+			"    A, B = map(int, input().split())",
+			"    $5[A].append(B)",
+			"    $6[B].append(A)"
+	 	],
+		"description": "無向グラフ"
+	}
+}
