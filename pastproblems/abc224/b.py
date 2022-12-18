@@ -22,7 +22,7 @@ for i1, i2 in combinations(range(H), 2):
 
 print('Yes')
 
-# 反省
+# Memo
 # -> 以下のようにやってもちゃんとした2重ループになぜかならない...
 # -> iteratorは変数に格納せずそのまま使うようにする
 I = combinations(range(H), 2)
