@@ -25,8 +25,8 @@ else:
     print('No')
 
 # Memo
-# -> スライスだともっと楽でスマートにできた...
-# --> head = T[:len(S)]
-# --> print('Yes') if S==head else print('No')
-# -> 文字列メソッドstartswith()でも楽にできる
-# --> print('Yes') if T.startswith(S) else print('No')
+# スライスだともっと楽でスマートにできた...
+# head = T[:len(S)]
+# print('Yes') if S==head else print('No')
+# 文字列メソッドstartswith()でも楽にできる
+# print('Yes') if T.startswith(S) else print('No')

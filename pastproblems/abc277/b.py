@@ -31,8 +31,8 @@ if len(setS) != N:
 print('Yes')
 
 # Memo
-# -> or, andを含む条件文で時間がかかった
-# -> 最初 if (not j == 'H') or (not j=='D') or (not j=='C') or (not j=='S')でやろうとしていたが個別にやると絶対Noに入るのでダメ
-# -> 実装方針, 解き方はすぐに理解できたのにPythonがよく分かっていなかった
-# -> Filter文字列は別にlistじゃなくても普通に'HDCS'でよかった...
+# or, andを含む条件文で時間がかかった
+# 最初 if (not j == 'H') or (not j=='D') or (not j=='C') or (not j=='S')でやろうとしていたが個別にやると絶対Noに入るのでダメ
+# 実装方針, 解き方はすぐに理解できたのにPythonがよく分かっていなかった
+# Filter文字列は別にlistじゃなくても普通に'HDCS'でよかった...
 
