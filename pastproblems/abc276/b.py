@@ -18,3 +18,8 @@ for g in G:
     ANS.append(len(g))
     ANS.extend(sorted(g))
     print(*ANS)
+
+# Memo
+# 最初[set()] * Nと書いてしまっていた
+# 上の初期化だとsetが全て同じオブジェクトになってappendとかが全ての要素に適用されてしまう
+# 二次元配列の場合はリスト内包表記を使うこと
