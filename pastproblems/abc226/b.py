@@ -4,6 +4,7 @@ import sys
 def input():
     return sys.stdin.readline()[:-1]
 
+
 N = int(input())
 L = set()
 for _ in range(N):

@@ -4,6 +4,7 @@ import sys
 def input():
     return sys.stdin.readline()[:-1]
 
+
 N = int(input())
 first = []
 second = []
@@ -15,24 +16,23 @@ for i in range(N):
     setS.add(s)
 
 for j in first:
-    if not j in ['H', 'D', 'C', 'S']:
-        print('No')
+    if j not in ["H", "D", "C", "S"]:
+        print("No")
         exit()
 
 for k in second:
-    if not k in ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K']:
-        print('No')
+    if k not in ["A", "2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K"]:
+        print("No")
         exit()
 
 if len(setS) != N:
-    print('No')
+    print("No")
     exit()
 
-print('Yes')
+print("Yes")
 
 # Memo
 # or, andを含む条件文で時間がかかった
 # 最初 if (not j == 'H') or (not j=='D') or (not j=='C') or (not j=='S')でやろうとしていたが個別にやると絶対Noに入るのでダメ
 # 実装方針, 解き方はすぐに理解できたのにPythonがよく分かっていなかった
 # Filter文字列は別にlistじゃなくても普通に'HDCS'でよかった...
-

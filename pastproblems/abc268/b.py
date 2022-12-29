@@ -4,11 +4,12 @@ import sys
 def input():
     return sys.stdin.readline()[:-1]
 
+
 S = input()
 T = input()
 
 if len(S) > len(T):
-    print('No')
+    print("No")
     exit()
 
 isANS = True
@@ -20,9 +21,9 @@ for i in range(len(S)):
         break
 
 if isANS:
-    print('Yes')
+    print("Yes")
 else:
-    print('No')
+    print("No")
 
 # Memo
 # スライスだともっと楽でスマートにできた...
