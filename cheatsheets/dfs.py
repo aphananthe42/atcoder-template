@@ -4,12 +4,13 @@
 
 import sys
 
-
 # 再帰関数のスタックオーバーフローを防ぐ
-sys.setrecursionlimit(10 ** 8)
+sys.setrecursionlimit(10**8)
+
 
 def input():
     return sys.stdin.readline()[:-1]
+
 
 N = int(input())
 P = list(map(int, input().split()))
@@ -17,8 +18,9 @@ P = list(map(int, input().split()))
 # 各頂点の子頂点リストを作る
 chs = [[] for _ in range(N)]
 for v in range(1, N):
-    p = P[v-1]
+    p = P[v - 1]
     chs[p].append(v)
+
 
 def dfs_standard(v, chs):
     """
@@ -31,12 +33,14 @@ def dfs_standard(v, chs):
     chs : list
         頂点vの子頂点のリスト
     """
-
-    print(v, end=' ')
+    print(v, end=" ")
     for ch in chs[v]:
         dfs_standard(ch, chs)
 
+
 depth = [0] * N
+
+
 def dfs_depth(v, p, depth, chs):
     """
     頂点vを根とする部分木の深さを探索
@@ -52,7 +56,6 @@ def dfs_depth(v, p, depth, chs):
     chs : list
         頂点vの子頂点のリスト
     """
-
     if v == 0:
         depth[v] = 0
     else:
@@ -61,7 +64,10 @@ def dfs_depth(v, p, depth, chs):
     for ch in chs[v]:
         dfs_depth(ch, v, depth, chs)
 
+
 size = [0] * N
+
+
 def dfs_size(v, p, size, chs):
     """
     頂点vを根とする部分木の頂点のサイズを探索
@@ -77,10 +83,9 @@ def dfs_size(v, p, size, chs):
     chs : list
         頂点vの子頂点のリスト
     """
-
     for ch in chs[v]:
         dfs_size(ch, v, size, chs)
-    
+
     size[v] = 1
     for ch in chs[v]:
         size[v] += size[ch]
