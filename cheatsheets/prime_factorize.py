@@ -4,7 +4,7 @@ def prime_factorize(N):
 
     Parameters
     ----------
-    N : int
+    N: int
         分解する整数
     """
     ans = []

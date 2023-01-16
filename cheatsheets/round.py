@@ -7,9 +7,9 @@ def round_up(seed, place):
 
     Parameters
     ----------
-    seed : int
+    seed: int
         四捨五入する整数
-    place : int
+    place: int
         四捨五入する位
     """
     place_str = f"1E{place}"

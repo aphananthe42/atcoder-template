@@ -4,11 +4,11 @@ def LCM(A, B, G):
 
     Parameters
     ----------
-    A : int
+    A: int
         整数A
-    B : int
+    B: int
         整数B
-    G : int
+    G: int
         A, Bの最大公約数
     """
     return (A * B) // G

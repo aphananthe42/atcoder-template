@@ -4,7 +4,7 @@ def calc_divisors(N):
 
     Parameters
     ----------
-    N : int
+    N: int
         判定する整数
     """
     ans = []

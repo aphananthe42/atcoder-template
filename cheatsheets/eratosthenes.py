@@ -5,7 +5,7 @@ def eratosthenes(N):
 
     Parameters
     ----------
-    N : int
+    N: int
         判定する上限
     """
     table = [True] * (N + 1)

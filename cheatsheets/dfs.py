@@ -74,13 +74,13 @@ def dfs_size(v, p, size, chs):
 
     Parameters
     ----------
-    v : int
+    v: int
         頂点v
-    p : int
+    p: int
         頂点vの親
-    size : list
+    size: list
         頂点vを根とする部分木のサイズリスト
-    chs : list
+    chs: list
         頂点vの子頂点のリスト
     """
     for ch in chs[v]:

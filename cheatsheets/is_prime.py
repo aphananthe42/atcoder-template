@@ -4,7 +4,7 @@ def is_prime(N):
 
     Parameters
     ----------
-    N : int
+    N: int
         判定する整数
     """
     if N < 2:
