@@ -40,7 +40,7 @@ class UnionFind:
         return [i for i, x in enumerate(self.parents) if x < 0]
 
     def group_count(self):
-        return len(self.roots)
+        return len(self.roots())
 
     def all_group_members(self):
         group_members = defaultdict(list)
