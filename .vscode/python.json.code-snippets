@@ -63,6 +63,15 @@
 		"description": "タプルのlist"
 	},
 
+	"snp_remove_dupulicate_from_list": {
+		"scope": "python",
+		"prefix": "snp_remove_dupulicate_from_list",
+		"body": [
+			"$1 = list(map(list, set(map(tuple, $1))))"
+		],
+		"description": "二重配列から重複を取り除く"
+	},
+
 	"snp_directed_graph": {
 		"scope": "python",
 	 	"prefix": "snp_dgraph",
