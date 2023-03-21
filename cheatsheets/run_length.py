@@ -1,7 +1,7 @@
 from itertools import groupby
 
 
-def runLengthEncode(S: str) -> list[tuple[str | int]]:
+def runLengthEncode(S):
     """
     ランレングス圧縮(エンコード)
 
@@ -26,7 +26,7 @@ def runLengthEncode(S: str) -> list[tuple[str | int]]:
     return res
 
 
-def runLengthDecode(L: list[tuple[str | int]]) -> str:
+def runLengthDecode(L):
     """
     ランレングス圧縮(デコード)
 
@@ -50,7 +50,7 @@ def runLengthDecode(L: list[tuple[str | int]]) -> str:
     return res
 
 
-def runLengthEncodeToString(S: str) -> str:
+def runLengthEncodeToString(S):
     """
     ランレングス圧縮
 
