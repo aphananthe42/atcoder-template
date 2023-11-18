@@ -6,7 +6,7 @@ def input():
 
 
 def main():
-    print("AtCoder")
+    print("atCoder template")
 
 
 if __name__ == "__main__":
