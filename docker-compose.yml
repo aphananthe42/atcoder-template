@@ -1,0 +1,7 @@
+services:
+  app:
+    image: pypy:3.10-7.3.12-bookworm
+    volumes:
+      - .:/atcoder-template
+    working_dir: /atcoder-template
+    tty: true
