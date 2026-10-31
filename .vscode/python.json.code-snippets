@@ -56,6 +56,14 @@
 		],
 		"description": "90度右回転"
 	},
+	"snp_rotate_left": {
+		"scope": "python",
+		"prefix": "snp_rotate_left",
+		"body": [
+			"$1 = list(zip(*$2))[::-1]"
+		],
+		"description": "90度左回転"
+	},
 	"snp_tuple_list": {
 		"scope": "python",
 		"prefix": "snp_tuplelist",
